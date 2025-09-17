@@ -57,18 +57,3 @@ nav ul {
     justify-content: center;
     align-items: center;
 }
-
-.outlet > * {
-    animation: fade-in 300ms;
-}
-
-@keyframes fade-in {
-    0% {
-        scale: 0.8;
-        opacity: 0;
-    }
-    100% {
-        scale: 1;
-        opacity: 1;
-    }
-}
