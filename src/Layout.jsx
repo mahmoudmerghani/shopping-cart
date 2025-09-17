@@ -1,6 +1,11 @@
 import { Outlet, NavLink } from "react-router-dom";
+import { useState } from "react";
+
 
 export default function Layout() {
+    const [placedProducts, setPlacedProducts] = useState({});
+
+
     return (
         <div className="container">
             <header>
@@ -33,14 +38,14 @@ export default function Layout() {
                                     isActive ? "active" : ""
                                 }
                             >
-                                Cart
+                                Cart <span className="products-number">{Object.keys(placedProducts).length}</span>
                             </NavLink>
                         </li>
                     </ul>
                 </nav>
             </header>
             <div className="outlet">
-                <Outlet />
+                <Outlet context={[placedProducts, setPlacedProducts]}/>
             </div>
         </div>
     );

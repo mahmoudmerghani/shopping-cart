@@ -10,10 +10,23 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     box-shadow: 0 5px 5px 0px rgb(0, 0, 0, 0.2);
+    margin-bottom: 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: white;
 }
 
 ul {
@@ -45,15 +58,12 @@ nav ul {
     gap: 1rem;
 }
 
-.container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 .outlet {
+    max-width: 1500px;
+    margin-inline: auto;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
