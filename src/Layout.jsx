@@ -1,6 +1,16 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { useState } from "react";
 
+function getNumberOfProducts(products) {
+    let sum = 0;
+
+    for (const key in products) {
+        sum += products[key].count;
+    }
+
+    return sum;
+}
+
 
 export default function Layout() {
     const [placedProducts, setPlacedProducts] = useState({});
@@ -38,7 +48,7 @@ export default function Layout() {
                                     isActive ? "active" : ""
                                 }
                             >
-                                Cart <span className="products-number">{Object.keys(placedProducts).length}</span>
+                                Cart <span className="products-number">{getNumberOfProducts(placedProducts)}</span>
                             </NavLink>
                         </li>
                     </ul>

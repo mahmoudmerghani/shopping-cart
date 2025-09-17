@@ -36,7 +36,8 @@ export default function Shop() {
 
     function handleAddToCart(id) {
         const product = products.find((p) => p.id === id);
-        setPlacedProducts({...placedProducts, [id]: product});
+        const newProduct = {...product, count: 1};
+        setPlacedProducts({...placedProducts, [id]: newProduct});
     }
 
     if (isLoading) {

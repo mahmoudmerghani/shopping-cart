@@ -4,3 +4,19 @@
     gap: 2rem;
 }
 
+.errorMessage {
+    font-size: 1.1rem;
+}
+
+.errorButton {
+    margin-left: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.errorButton:hover {
+    background-color: #ddd;
+}
+

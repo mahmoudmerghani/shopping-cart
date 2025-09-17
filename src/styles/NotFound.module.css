@@ -1,0 +1,21 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message {
+    font-size: 30px;
+    margin: 0.5rem;
+}
+
+.link {
+    font-size: 20px;
+    display: block;
+}
+
+a.link {
+    all: revert;
+}
