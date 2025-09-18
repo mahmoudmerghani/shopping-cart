@@ -1,16 +1,6 @@
 import { Outlet, NavLink } from "react-router-dom";
 import { useState } from "react";
-
-function getNumberOfProducts(products) {
-    let sum = 0;
-
-    for (const key in products) {
-        sum += products[key].count;
-    }
-
-    return sum;
-}
-
+import { getNumberOfProducts } from "./utils";
 
 export default function Layout() {
     const [placedProducts, setPlacedProducts] = useState({});

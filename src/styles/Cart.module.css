@@ -1,0 +1,7 @@
+.cart > *:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.emptyMessage {
+    font-size: 24px;
+}
