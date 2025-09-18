@@ -54,3 +54,17 @@
     border: 1px solid #aaa;
     cursor: default;
 }
+
+.rating {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.star {
+    height: 1em;
+    fill: #f5c518;
+}
+
+.price {
+    font-size: 24px;
+}
