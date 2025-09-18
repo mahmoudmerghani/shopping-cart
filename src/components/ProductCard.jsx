@@ -10,7 +10,6 @@ export default function ProductCard({
     isProductPlaced,
     onAddToCart,
 }) {
-    console.log(rating);
     return (
         <div className={styles.productCard}>
             <div className={styles.image}>
